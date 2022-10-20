@@ -14,12 +14,18 @@ class Counter extends Component {
     render() { // Render method is the method that is shown to the world
         return (
             <React.Fragment>
-                <span className='badge bg-primary m-2'>
+                <span className={this.getCounterClasses()}> {/* we set the 'className to our classes variable we made above */}
                     {this.formatCount()}
                 </span> {/* class == className - as this is turned into JS, 'class' is a reserved name, so we use 'className' for bootstrap */}
                 <button className='btn btn-secondary btn-sm'>Increment</button>
             </React.Fragment>
         ); // Wrap in a div tag so React.createElement('div') occurs and an error isnt thrown - we change 'div' to 'React.Fragment' so it uses the 'root' div already made
+    }
+
+    getCounterClasses() { // To set our badges boostrap classes
+        let classes = "badge m-2 text-bg-"; // since we want our 'zero' to be yellow, and anything else to be blue, we can se this variable here to hold our style
+        classes += (this.state.count === 0) ? "warning" : "primary"; // Then we can append either 'warning' or 'primary' depending on if 'count' is equal to 0 or not
+        return classes;
     }
 
     formatCount() { // formatCount method formats the count for us
