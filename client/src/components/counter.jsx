@@ -9,6 +9,7 @@ class Counter extends Component {
 
     state = { // An object that includes any data that this component needs
         count: 0,
+        tags: ['tag1', 'tag2', 'tag3']
     }; 
 
     render() { // Render method is the method that is shown to the world
@@ -18,6 +19,9 @@ class Counter extends Component {
                     {this.formatCount()}
                 </span> {/* class == className - as this is turned into JS, 'class' is a reserved name, so we use 'className' for bootstrap */}
                 <button className='btn btn-secondary btn-sm'>Increment</button>
+                <u>
+                    { this.state.tags.map(tag => <li></li>) }
+                </u>
             </React.Fragment>
         ); // Wrap in a div tag so React.createElement('div') occurs and an error isnt thrown - we change 'div' to 'React.Fragment' so it uses the 'root' div already made
     }
