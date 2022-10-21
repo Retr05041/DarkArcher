@@ -11,7 +11,8 @@ import NavBar from './components/navBar'; // Imported my first custom component 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar /> 
+    {/* <NavBar /> */}
+    <Counter />
   </React.StrictMode>
 ); // We edit the middle line so we use our 'Counter' component, and not the default 'App' component
 
