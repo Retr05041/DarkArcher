@@ -1,4 +1,4 @@
-// COMPONENT - A dumby counter, for practice
+// CONTROLLED COMPONENT (counters) - A dumby counter, for practice - a controlled component doesnt have its own state, and gets everything from props, and raises events when anything needs to be changed
 
 // 'imrc' - to react component
 import React, { Component } from 'react';
@@ -8,7 +8,7 @@ class Counter extends Component {
     // Anything inside of {} is JS - we can call our function 'formatCount()' to get the formatted count
 
     state = { // An object that includes any data that this component needs
-        value: this.props.value, // whe set 'count' equal to 'this.props.value' - so when we init a new counter component, the int given for the value prop will be used
+        value: this.props.counter.value, // whe set 'count' equal to 'this.props.counter.value' - so when we init a new counter component, the int given for the value prop will be used
     }; 
 
     render() { // Render method is the method that is shown to the world
@@ -22,7 +22,7 @@ class Counter extends Component {
                     {this.formatCount()}
                 </span> {/* class == className - as this is turned into JS, 'class' is a reserved name, so we use 'className' for bootstrap */}
                 <button onClick={this.handleIncrement} className='btn btn-secondary btn-sm'>Increment</button>
-                <button className="btn btn-danger btn-sm m-2">Delete</button>
+                <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm m-2">Delete</button>
             </div>
         ); // Wrap in a div tag so React.createElement('div') occurs and an error isnt thrown - we change 'div' to 'React.Fragment' so it uses the 'root' div already made
     }
