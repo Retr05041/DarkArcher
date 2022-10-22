@@ -2,17 +2,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'; // Added bootstrap@5.2.2 to my app
-import Counter from './components/counter'; // Imported my first custom component 'Counter'
+import Counters from './components/counters'; // Imported my first custom component 'Counter'
 import NavBar from './components/navBar'; // Imported my first custom component 'Counter'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <NavBar /> */}
-    <Counter />
+    <Counters />
   </React.StrictMode>
 ); // We edit the middle line so we use our 'Counter' component, and not the default 'App' component
 
