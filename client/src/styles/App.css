@@ -4,6 +4,10 @@
     padding-left: 0;
 }
 
+.tab-height {
+    height: 5vh;
+}
+
 /* Body for files */
 .file-body {
     background-color: #3A3636;

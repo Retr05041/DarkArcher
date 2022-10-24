@@ -12,7 +12,7 @@ class App extends Component {
             <React.Fragment>
                 <NavBar />
                 <div className='container-fluid tab-height tab-bar'>
-                    <button class="btn btn-primary btn-test-width" type="button">test</button>
+                    <button class="btn btn-primary btn-lg rounded-0" type="button">Directory: Root</button>
                 </div>
                 <main className='container-fluid height-full file-body'>
                     <div className='container-fluid'>
