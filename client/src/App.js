@@ -9,8 +9,8 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavBar />,
-                <main className='container'>
+                <NavBar />
+                <main className='container-fluid'>
                     <Counters />
                 </main>
             </React.Fragment>
