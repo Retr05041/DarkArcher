@@ -3,12 +3,12 @@
 }
 
 /* For Nav bar brand 'Dark Archer' */
-.navbar-brand {
+.darkarcher-brand {
     font-size: 30px;
     color: orangered;
 }
 
-.navbar-brand:hover {
+.darkarcher-brand:hover {
     color: orangered
 }
 

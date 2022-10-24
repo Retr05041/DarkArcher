@@ -1,0 +1,13 @@
+.directory-tab {
+    padding-left: 0;
+    width: 15vh;
+    height: 5vh;
+
+    color: orangered;
+    background-color: #1E1E1E !important;
+    border-color: #1E1E1E !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
