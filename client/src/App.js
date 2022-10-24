@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import Counters from './components/counters'; // Imported my first custom component 'Counter'
 import NavBar from './components/navBar'; // Imported my first custom component 'Counter'
+import './styles/App.css';
 
 class App extends Component {
     state = {}
@@ -10,8 +11,13 @@ class App extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <main className='container-fluid'>
-                    <Counters />
+                <div className='container-fluid tab-height tab-bar'>
+                    <button class="btn btn-primary btn-test-width" type="button">test</button>
+                </div>
+                <main className='container-fluid height-full file-body'>
+                    <div className='container-fluid'>
+                        <Counters />
+                    </div>
                 </main>
             </React.Fragment>
         );

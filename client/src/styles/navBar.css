@@ -1,9 +1,34 @@
+.navbar {
+    height: 75px;
+}
 
 /* For Nav bar brand 'Dark Archer' */
 .navbar-brand {
+    font-size: 30px;
     color: orangered;
-    
 }
+
 .navbar-brand:hover {
     color: orangered
+}
+
+/* Buttons */
+.upload-btn {
+    background-color: orangered !important;
+    border-color: orangered !important;
+}
+
+.upload-btn:hover {
+    background-color: #e63d00 !important;
+    border-color: #e63d00 !important;
+}
+
+.logout-btn {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.logout-btn:hover {
+    background-color: #e60000 !important;
+    border-color: #e60000 !important;
 }
