@@ -1,4 +1,4 @@
-# <span style="color:#ff4500">Dark Archer</span>
+# <span style="text-color:#ff4500">Dark Archer</span>
 *The last file server you will ever need*
 
 ***Dark Archer*** is the successor to [Archer-FS](https://github.com/Retr05041/Archer-FS) which was a project I started back in November of 2021.
