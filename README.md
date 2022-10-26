@@ -1,4 +1,4 @@
-# Dark Archer
+# Dark Archer - [test](https://badgen.net/badge/Hello/World/orange)
 *The last file server you will ever need*
 
 ***Dark Archer*** is the successor to [Archer-FS](https://github.com/Retr05041/Archer-FS) which was a project I started back in November of 2021.
