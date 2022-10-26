@@ -1,4 +1,5 @@
-# Dark Archer ⋅⋅* ![license](https://badgen.net//badge/license/GPL-3.0/blue)
+# Dark Archer 
+* ![license](https://badgen.net//badge/license/GPL-3.0/blue)
 *The last file server you will ever need*
 
 ***Dark Archer*** is the successor to [Archer-FS](https://github.com/Retr05041/Archer-FS) which was a project I started back in November of 2021.
