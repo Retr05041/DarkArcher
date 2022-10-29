@@ -4,11 +4,10 @@ import React, { Component } from 'react';
 import '../styles/navBar.css';
 
 class NavBar extends Component {
-    state = {};
-
-    styles = {
+    state = {
 
     };
+
     render() {
         return (
             <nav className='navbar navbar-dark bg-dark'>
@@ -20,17 +19,17 @@ class NavBar extends Component {
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
 
                         {/* Upload form - will be handled by the backend */}
-                        <form className='row g-2' method="POST" action="/upload-file">
-                            <div class="col-auto">
+                        <form className='row g-2' method="POST" action="/" encType="multipart/form-data">
+                            <div className="col-auto">
                                 <input className="form-control form-control-sm" type="file" name="inputedFile" required></input>
                             </div>
-                            <div class="col-auto">
+                            <div className="col-auto">
                                 <button className="btn btn-primary me-md-2 upload-btn" type="submit">Upload</button>
                             </div>
                         </form>
 
                         {/* Logout button */}
-                        <button class="btn btn-primary logout-btn" type="button">Logout</button>
+                        <button className="btn btn-primary logout-btn" type="button">Logout</button>
                     </div>
 
                 </div>
