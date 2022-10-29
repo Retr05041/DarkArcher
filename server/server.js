@@ -1,7 +1,8 @@
 const express = require("express"); // for the app itself - add ""homepage": "./"" in replacement for ""proxy": "http://localhost:5000/"," to build it 
 const server = express();
 const fileUpload = require('express-fileupload'); // for uploading files
-const alert = require('alert');
+const fs = require("fs"); // Dealing with files
+const alert = require('alert'); // alerts
 const port = 5000;
 
 // To render the React app in /build
@@ -9,6 +10,7 @@ const port = 5000;
 
 // default options
 server.use(fileUpload());
+
 
 // Post request for uploading a file - index.html
 server.post('/', function (req, res) {
@@ -32,6 +34,10 @@ server.post('/', function (req, res) {
         res.redirect('/');
         alert("File Uploaded!")
     });
+});
+
+server.get("/", (req, res) => {
+    let files = fs.readdirSync("../data/"); // Every time the site is reloded it will list new files
 });
 
 server.listen(port, () => { console.log(`Server is active on port ${port}`) }); // Start server

@@ -1,4 +1,4 @@
-// MAIN CLIENT - linked to our '../public/index.html'
+// MAIN CLIENT
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
