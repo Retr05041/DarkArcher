@@ -10,7 +10,7 @@ const port = 5000;
 // default options
 server.use(fileUpload());
 
-// Post request for uploading a file
+// Post request for uploading a file - index.html
 server.post('/', function (req, res) {
     let inputedFile;
     let uploadPath;
@@ -33,10 +33,5 @@ server.post('/', function (req, res) {
         alert("File Uploaded!")
     });
 });
-
-// Home page
-server.get("/", (req, res) => {
-    //  res.sendFile(path.join(__dirname, 'build', 'index.html')) -- test if it renders /build
-})
 
 server.listen(port, () => { console.log(`Server is active on port ${port}`) }); // Start server
