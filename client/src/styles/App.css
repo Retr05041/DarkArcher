@@ -8,6 +8,21 @@
     height: 5vh;
 }
 
+/* Directory Tab */
+.directory-tab {
+    padding-left: 0;
+    width: 15vh;
+    height: 5vh;
+
+    background-color: #3A3636 !important;
+    border-color: #3A3636 !important;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
 /* Body for files */
 .file-body {
     background-color: #3A3636;
