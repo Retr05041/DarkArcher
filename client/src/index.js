@@ -1,7 +1,7 @@
 // MAIN CLIENT
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'; // Added bootstrap@5.2.2 to my app
 import App from './App'; // Root component
