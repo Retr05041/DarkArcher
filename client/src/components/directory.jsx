@@ -6,8 +6,8 @@ import '../styles/directory.css';
 class Directory extends Component {
     render() {
         return (
-            <div className='container-fluid directory-tab'>
-                <span className='navbar-brand directory-brand'>Directory: <span className='badge bg-secondary'>{this.props.directory}</span></span>
+            <div className='container-fluid tab'>
+                <span className='navbar-brand tab-brand mt-2'>{this.props.directory}</span>
             </div>
         );
     }
