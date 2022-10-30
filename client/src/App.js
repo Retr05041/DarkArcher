@@ -18,8 +18,8 @@ class App extends Component {
                 {/* Directory / Folder tabs */}
                 <div className='container-fluid tab-height tab-bar'>
                     {/* Gives directory tab before the given folders */}
-                    <div className='directory-tab'>
-                        <Directory directory='root' /> {/* Hard coding root for the time being */}
+                    <div className='directory-tab ms-2'>
+                        <Directory directory='storage/' /> {/* Hard coding root for the time being */}
                     </div>
                 </div>
 
