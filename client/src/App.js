@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import NavBar from './components/navBar'; // Imported Navbar
 import Directory from './components/directory'; // Imported Directory
-import Counters from './components/counters'; // Imported my first custom component 'Counter'
+import Body from './components/body'; // Imported Body
 import './styles/App.css';
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
                 {/* File body - where all the files of a given tab will show */}
                 <main className='container-fluid height-full file-body'>
                     <div className='container-fluid'>
-                        <Counters />
+                        <Body />
                     </div>
                 </main>
 
