@@ -22,7 +22,7 @@ class Body extends Component {
 
     render() {
         return (
-            <div className='container-fluid'>
+            <div className='container-fluid file-list'>
                 {this.renderFiles()}
             </div>
         );
