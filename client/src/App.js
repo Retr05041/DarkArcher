@@ -24,10 +24,8 @@ class App extends Component {
                 </div>
 
                 {/* File body - where all the files of a given tab will show */}
-                <main className='container-fluid height-full file-body'>
-                    <div className='container-fluid'>
-                        <Body />
-                    </div>
+                <main className='container-fluid height-full file-body-background'>
+                    <Body />
                 </main>
 
             </React.Fragment>
