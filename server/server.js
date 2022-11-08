@@ -5,7 +5,7 @@ const fs = require("fs"); // Dealing with files
 const path = require("path");
 const alert = require('alert'); // alerts
 const port = 5000;
-const dirPath = "../storage/";
+const dirPath = "storage/"; // Will not work unless run in docker now
 
 // To render the React app in /build
 //  server.use(express.static(path.join(__dirname, 'build')))
