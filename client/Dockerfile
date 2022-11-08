@@ -8,4 +8,5 @@ RUN npm install
 
 COPY ./ ./
 
-CMD ["npm", "start"]
+# We just want to run a build, so we have access to our static frontpage
+CMD ["npm", "run", "build"]
