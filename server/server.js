@@ -5,19 +5,16 @@ const fs = require("fs"); // Dealing with files
 const path = require("path");
 const alert = require('alert'); // alerts
 const port = 5000;
-const dirPath = "../storage/";
+const dirPath = "storage/"; // Will not work unless run in docker now
 
 // To render the React app in /build
 //  server.use(express.static(path.join(__dirname, 'build')))
 
 // Default options
 server.use(fileUpload());
-// serves the contents of 'dirPath' as static files - consider using 'nginx' for production
-server.use("/storage", express.static(dirPath));
-
 
 // Post request for uploading a file - index.html
-server.post('/', function (req, res) {
+server.post('/api/upload', function (req, res) {
     let inputedFile;
     let uploadPath;
 

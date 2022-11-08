@@ -19,7 +19,7 @@ class NavBar extends Component {
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
 
                         {/* Upload form - will be handled by the backend */}
-                        <form className='row g-2' method="POST" action="/" encType="multipart/form-data">
+                        <form className='row g-2' method="POST" action="/api/upload" encType="multipart/form-data">
                             <div className="col-auto">
                                 <input className="form-control form-control-sm" type="file" name="inputedFile" required></input>
                             </div>
