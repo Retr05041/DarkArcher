@@ -1,0 +1,2 @@
+# Ignore these folders/files in the Docker image
+node_modules
