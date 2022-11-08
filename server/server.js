@@ -17,7 +17,7 @@ server.use("/storage", express.static(dirPath));
 
 
 // Post request for uploading a file - index.html
-server.post('/', function (req, res) {
+server.post('/api/upload', function (req, res) {
     let inputedFile;
     let uploadPath;
 
