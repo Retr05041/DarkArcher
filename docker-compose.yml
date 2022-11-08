@@ -20,4 +20,5 @@ services:
       - 80:80 # Expose port 80 to the outside world under port 80
     volumes:
       - ./staticFrontend:/staticFrontend:ro # Take our newly generated 'staticFrontend' for display use
+      - ./storage:/storage:ro # We need nginx to see this folder so it can server new and old files
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf # For live updates
