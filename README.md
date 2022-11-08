@@ -1,20 +1,18 @@
 # Dark Archer 
 *"The last file server you will ever need"*
 
-![license](https://badgen.net/badge/license/GPL-3.0/blue)
+![license](https://badgen.net/badge/license/GPL-3.0/blue) ![release](https://badgen.net/badge/release/V1-Alpha/green)
 
 ***Dark Archer*** is the successor to [Archer-FS](https://github.com/Retr05041/Archer-FS) which was a project I started back in November of 2021.
 Now that my skills have increased and my need for this project to be a success has skyrocketed, I have decided to revamp the project into what it is now.
 
-## What am I building this off of?
-- Node.js : For the runtime environment
-- Express.js : For the backend framework
-- React.js : For the front end UI
+## How to install
+The installation has been made very simple due to the use of [Docker](https://www.docker.com/).
 
-## Plans for the future?
-At the moment, V1 of the app is still being designed and made.
+1. Pull Repo down, through any method you prefer
+2. If you do not have Docker/Docker-Compose installed, run the `docker-installer.sh` bash script, or install it manually
+    - if you install it manually, please create a 'storage' folder in the root directory, this is where your incoming and outgoing files will be held
+3. Run `docker compose up --build` to build the project the first time and run it
 
-The current plan is as follows:
-- Create a working, basic V1
-- Create a Docker image of V1 and make new branch for it, for easy cross platform usability
-- Add features / expand on the app, make a login screen, etc.
+Reminder to run `docker compose down` when you want to shut down the images. After running the project with the `--build` flag the first time,
+you will not need it on subsequent runs
