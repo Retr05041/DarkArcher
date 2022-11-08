@@ -12,9 +12,6 @@ const dirPath = "storage/"; // Will not work unless run in docker now
 
 // Default options
 server.use(fileUpload());
-// serves the contents of 'dirPath' as static files - consider using 'nginx' for production
-server.use("/storage", express.static(dirPath));
-
 
 // Post request for uploading a file - index.html
 server.post('/api/upload', function (req, res) {
