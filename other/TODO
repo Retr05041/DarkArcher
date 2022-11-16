@@ -1,4 +1,5 @@
 1. Fix Icon image - Stuck on React, Want my own Icon
 2. Cards for file holders
-3. Dynamic root folder change
-4. Login screen
+3. Dynamic root folder change + Better root folder css
+4. Login screen + working logout button
+5. Additional folder tabs + onlick change
